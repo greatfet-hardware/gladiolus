@@ -17,18 +17,18 @@ $EndDescr
 Text Label 15300 1800 0    40   ~ 0
 P2_8
 $Comp
-L gladiolus-rescue:CONN_02X20-gladiolus-rescue J2
+L Connector_Generic:Conn_02x20_Odd_Even J2
 U 1 1 55EAB4B7
-P 15750 2150
-F 0 "J2" H 15750 3200 50  0000 C CNN
-F 1 "NEIGHBOR2" V 15750 2150 50  0000 C CNN
-F 2 "gsg-modules:HEADER-2x20" H 15750 1200 60  0001 C CNN
-F 3 "" H 15750 1200 60  0000 C CNN
-F 4 "Samtec" H 15750 2150 60  0001 C CNN "Manufacturer"
-F 5 "SSQ-120-23-G-D" H 15750 2150 60  0001 C CNN "Part Number"
-F 6 "CONN RCPT .100\" 40POS DUAL-ROW STACKING GOLD" H 15750 2150 60  0001 C CNN "Description"
-F 7 "Alternate: https://www.adafruit.com/products/2223" H 15750 2150 60  0001 C CNN "Note"
-	1    15750 2150
+P 15700 2100
+F 0 "J2" H 15700 3150 50  0000 C CNN
+F 1 "NEIGHBOR2" V 15700 2100 50  0000 C CNN
+F 2 "gsg-modules:HEADER-2x20" H 15700 1150 60  0001 C CNN
+F 3 "" H 15700 1150 60  0000 C CNN
+F 4 "Samtec" H 15700 2100 60  0001 C CNN "Manufacturer"
+F 5 "SSQ-120-23-G-D" H 15700 2100 60  0001 C CNN "Part Number"
+F 6 "CONN RCPT .100\" 40POS DUAL-ROW STACKING GOLD" H 15700 2100 60  0001 C CNN "Description"
+F 7 "Alternate: https://www.adafruit.com/products/2223" H 15700 2100 60  0001 C CNN "Note"
+	1    15700 2100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -67,18 +67,18 @@ $EndComp
 Text Label 16200 1200 2    40   ~ 0
 VBUS
 $Comp
-L gladiolus-rescue:CONN_02X20-gladiolus-rescue J1
+L Connector_Generic:Conn_02x20_Odd_Even J1
 U 1 1 55FB1D52
-P 15750 4750
-F 0 "J1" H 15750 5800 50  0000 C CNN
-F 1 "NEIGHBOR1" V 15750 4750 50  0000 C CNN
-F 2 "gsg-modules:HEADER-2x20" H 15750 3800 60  0001 C CNN
-F 3 "" H 15750 3800 60  0000 C CNN
-F 4 "Samtec" H 15750 4750 60  0001 C CNN "Manufacturer"
-F 5 "SSQ-120-23-G-D" H 15750 4750 60  0001 C CNN "Part Number"
-F 6 "CONN RCPT .100\" 40POS DUAL-ROW STACKING GOLD" H 15750 4750 60  0001 C CNN "Description"
-F 7 "Alternate: https://www.adafruit.com/products/2223" H 15750 4750 60  0001 C CNN "Note"
-	1    15750 4750
+P 15700 4700
+F 0 "J1" H 15700 5750 50  0000 C CNN
+F 1 "NEIGHBOR1" V 15700 4700 50  0000 C CNN
+F 2 "gsg-modules:HEADER-2x20" H 15700 3750 60  0001 C CNN
+F 3 "" H 15700 3750 60  0000 C CNN
+F 4 "Samtec" H 15700 4700 60  0001 C CNN "Manufacturer"
+F 5 "SSQ-120-23-G-D" H 15700 4700 60  0001 C CNN "Part Number"
+F 6 "CONN RCPT .100\" 40POS DUAL-ROW STACKING GOLD" H 15700 4700 60  0001 C CNN "Description"
+F 7 "Alternate: https://www.adafruit.com/products/2223" H 15700 4700 60  0001 C CNN "Note"
+	1    15700 4700
 	1    0    0    -1  
 $EndComp
 Text Label 16200 3900 2    40   ~ 0
@@ -543,7 +543,7 @@ F 3 "" H 2900 5600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L gladiolus-rescue:AD8330ARQZ-gladiolus-rescue U2
+L gsg-symbols:AD8330ARQZ U2
 U 1 1 58431C5F
 P 7500 3400
 F 0 "U2" H 7500 3850 60  0000 C CNN
@@ -742,7 +742,7 @@ F 3 "" H 3100 1650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L gladiolus-rescue:POT-gladiolus-rescue RV3
+L Device:R_POT RV3
 U 1 1 5843C880
 P 7900 1450
 F 0 "RV3" H 7900 1370 50  0000 C CNN
@@ -754,7 +754,7 @@ F 5 "3306F-1-103" H 7900 1450 60  0001 C CNN "Part Number"
 F 6 "10k Ohm 0.2W, 1/5W PC Pins Through Hole Trimmer Potentiometer Cermet 1 Turn Top Adjustment" H 7900 1450 60  0001 C CNN "Description"
 F 7 "DNP" H 7900 1300 60  0000 C CNN "Note"
 	1    7900 1450
-	0    1    -1   0   
+	1    0    0    1   
 $EndComp
 $Comp
 L power:VCC #PWR026
@@ -862,7 +862,7 @@ F 3 "" H 8700 3950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L gladiolus-rescue:FILTER-gladiolus-rescue FB1
+L Device:Ferrite_Bead FB1
 U 1 1 5844406A
 P 15650 3450
 F 0 "FB1" H 15650 3600 50  0000 C CNN
@@ -873,7 +873,7 @@ F 4 "Murata" H 15650 3450 60  0001 C CNN "Manufacturer"
 F 5 "BLM21PG221SN1D" H 15650 3450 60  0001 C CNN "Part Number"
 F 6 "FERRITE BEAD 220 OHM 0805 1LN" H 15650 3450 60  0001 C CNN "Description"
 	1    15650 3450
-	1    0    0    -1  
+	0    -1   -1   0   
 $EndComp
 NoConn ~ 16150 6700
 $Comp
@@ -993,7 +993,7 @@ F 6 "CAP CER 24PF 50V NP0 0402" H 10100 3400 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L gladiolus-rescue:AD9283-gladiolus-rescue U3
+L gsg-symbols:AD9283 U3
 U 1 1 5844DDA3
 P 12150 3300
 F 0 "U3" H 12150 3850 60  0000 C CNN
@@ -1446,7 +1446,7 @@ F 7 "DNP" V 8050 1200 60  0000 C CNN "Note"
 	-1   0    0    1   
 $EndComp
 $Comp
-L gladiolus-rescue:POT-gladiolus-rescue RV2
+L Device:R_POT RV2
 U 1 1 58485812
 P 6600 1450
 F 0 "RV2" H 6600 1370 50  0000 C CNN
@@ -1457,7 +1457,7 @@ F 4 "Bourns" H 6600 1450 60  0001 C CNN "Manufacturer"
 F 5 "3306F-1-103" H 6600 1450 60  0001 C CNN "Part Number"
 F 6 "10k Ohm 0.2W, 1/5W PC Pins Through Hole Trimmer Potentiometer Cermet 1 Turn Top Adjustment" H 6600 1450 60  0001 C CNN "Description"
 	1    6600 1450
-	0    1    -1   0   
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:R R39
@@ -1558,7 +1558,7 @@ F 6 "RES SMD 0.0OHM JUMPER 1/10W 0603" H 13450 4000 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L gladiolus-rescue:LED-gladiolus-rescue D3
+L Device:LED_ALT D3
 U 1 1 58496E3C
 P 8850 6650
 F 0 "D3" H 8850 6750 50  0000 C CNN
@@ -1636,7 +1636,7 @@ F 6 "RES SMD 1K OHM 5% 1/10W 0603" H 5850 9750 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L gladiolus-rescue:THS4520RGT-gladiolus-rescue U1
+L gsg-symbols:THS4520RGT U1
 U 1 1 585AF88F
 P 2950 3400
 F 0 "U1" H 2950 3550 60  0000 C CNN
@@ -2070,7 +2070,7 @@ F 6 "RES SMD 3.24K OHM 1% 1/10W 0603" H 2600 4550 60  0001 C CNN "Description"
 	-1   0    0    1   
 $EndComp
 $Comp
-L gladiolus-rescue:POT-gladiolus-rescue RV1
+L Device:R_POT RV1
 U 1 1 585D6FEA
 P 1950 5350
 F 0 "RV1" H 1950 5270 50  0000 C CNN
@@ -2082,7 +2082,7 @@ F 5 "3306F-1-103" H 1950 5350 60  0001 C CNN "Part Number"
 F 6 "10k Ohm 0.2W, 1/5W PC Pins Through Hole Trimmer Potentiometer Cermet 1 Turn Top Adjustment" H 1950 5350 60  0001 C CNN "Description"
 F 7 "DNP" H 1950 5200 60  0000 C CNN "Note"
 	1    1950 5350
-	0    1    -1   0   
+	1    0    0    1   
 $EndComp
 Text Label 13800 2600 2    40   ~ 0
 P0_0
@@ -2189,7 +2189,7 @@ F 6 "RES SMD 39 OHM 5% 1/10W 0603" H 13450 4950 60  0001 C CNN "Description"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L gladiolus-rescue:LMH6643-gladiolus-rescue U5
+L gsg-symbols:LMH6643 U5
 U 1 1 586AE8AE
 P 6950 7450
 F 0 "U5" H 6950 7700 60  0000 C CNN
@@ -2203,7 +2203,7 @@ F 6 "IC OPAMP VFB 130MHZ RRO 8VSSOP" H 6950 7450 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L gladiolus-rescue:AD9704-gladiolus-rescue U4
+L gsg-symbols:AD9704 U4
 U 1 1 586AD726
 P 3050 7450
 F 0 "U4" H 3050 7500 60  0000 C CNN
@@ -3545,11 +3545,7 @@ Wire Wire Line
 Wire Wire Line
 	8450 7400 8550 7400
 Wire Wire Line
-	8850 6850 8850 7200
-Wire Wire Line
 	8850 8400 8850 8500
-Wire Wire Line
-	8850 6350 8850 6450
 Wire Wire Line
 	13000 2600 13300 2600
 Wire Wire Line
@@ -3728,13 +3724,9 @@ Wire Wire Line
 Wire Wire Line
 	7950 3150 8700 3150
 Wire Wire Line
-	16100 3450 16000 3450
-Wire Wire Line
 	16100 3800 16100 3450
 Wire Wire Line
 	16000 3800 16100 3800
-Wire Wire Line
-	15200 3450 15300 3450
 Wire Wire Line
 	8700 3850 8700 3950
 Connection ~ 8700 3150
@@ -4312,7 +4304,9 @@ F 0 "R76" V 1730 2850 50  0000 C CNN
 F 1 "1M" V 1650 2850 50  0000 C CNN
 F 2 "gsg-modules:0603" V 1580 2850 50  0001 C CNN
 F 3 "" H 1650 2850 50  0000 C CNN
-F 4 "" V 1550 2850 60  0000 C CNN "Note"
+F 4 "Yageo " H 1650 2850 50  0001 C CNN "Manufacturer"
+F 5 "RC0603JR-071ML" H 1650 2850 50  0001 C CNN "Part Number"
+F 6 "RES SMD 1M OHM 5% 1/10W 0603 " H 1650 2850 50  0001 C CNN "Description"
 	1    1650 2850
 	1    0    0    -1  
 $EndComp
@@ -4720,4 +4714,12 @@ F 3 "" H 9350 8300 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	9350 8300 9400 8300
+Wire Wire Line
+	8850 6500 8850 6350
+Wire Wire Line
+	8850 6800 8850 7200
+Wire Wire Line
+	15200 3450 15500 3450
+Wire Wire Line
+	15800 3450 16100 3450
 $EndSCHEMATC
