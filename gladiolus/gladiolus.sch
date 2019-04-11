@@ -2962,32 +2962,6 @@ F 6 "RES SMD 249 OHM 1% 1/10W 0603" H 4300 7400 60  0001 C CNN "Description"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C24
-U 1 1 586FE5EE
-P 4600 6650
-F 0 "C24" H 4625 6750 50  0000 L CNN
-F 1 "100nF" H 4625 6550 50  0000 L CNN
-F 2 "gsg-modules:0603" H 4638 6500 50  0001 C CNN
-F 3 "" H 4600 6650 50  0000 C CNN
-F 4 "Murata" H 4600 6650 60  0001 C CNN "Manufacturer"
-F 5 "GRM188R71C104KA01D" H 4600 6650 60  0001 C CNN "Part Number"
-F 6 "CAP CER 0.1UF 16V X7R 0603" H 4600 6650 60  0001 C CNN "Description"
-F 7 "DNP" V 4450 6650 60  0000 C CNN "Note"
-	1    4600 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR088
-U 1 1 586FE7EA
-P 4600 6400
-F 0 "#PWR088" H 4600 6150 50  0001 C CNN
-F 1 "GND" H 4600 6250 50  0000 C CNN
-F 2 "" H 4600 6400 50  0000 C CNN
-F 3 "" H 4600 6400 50  0000 C CNN
-	1    4600 6400
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:R R73
 U 1 1 587030DD
 P 8300 7400
@@ -4071,16 +4045,9 @@ Wire Wire Line
 	4150 6900 4150 7200
 Wire Wire Line
 	4150 7200 3850 7200
-Wire Wire Line
-	4150 6900 4600 6900
-Wire Wire Line
-	4600 6900 4600 6800
-Connection ~ 4600 6900
-Wire Wire Line
-	4600 6500 4600 6400
 Connection ~ 8850 8000
 Wire Wire Line
-	7100 6850 7550 6850
+	7100 6850 7200 6850
 Wire Wire Line
 	8450 8000 8850 8000
 Wire Wire Line
@@ -4478,8 +4445,6 @@ Text Notes 5600 9750 0    40   ~ 0
 TODO:\nDNP?
 Text Notes 6600 8350 0    50   ~ 0
 short +/- inputs\nto turn off TX
-Text Notes 5000 6700 0    50   ~ 0
-removed DNP components\nfor inverting output
 $Comp
 L Device:C C29
 U 1 1 5C93BED7
@@ -4618,8 +4583,6 @@ Wire Wire Line
 Wire Wire Line
 	4450 7400 4500 7400
 Wire Wire Line
-	4600 6900 5150 6900
-Wire Wire Line
 	5550 7400 5950 7400
 NoConn ~ 15300 1700
 NoConn ~ 15300 1800
@@ -4722,4 +4685,67 @@ Wire Wire Line
 	15200 3450 15500 3450
 Wire Wire Line
 	15800 3450 16100 3450
+Text Notes 6400 5800 0    50   ~ 0
+ground amp\nto turn off TX
+$Comp
+L gsg-symbols:74LVC1G3157 U?
+U 1 1 5CB72BB9
+P 6700 6000
+F 0 "U?" V 6746 5772 50  0000 R CNN
+F 1 "74LVC1G3157" V 6655 5772 50  0000 R CNN
+F 2 "gsg-modules:SOT363" H 6700 6000 50  0001 C CNN
+F 3 "" H 6700 6000 50  0001 C CNN
+F 4 "Diodes Incorporated" V 6655 5772 50  0001 R CNN "Manufacturer"
+F 5 "74LVC1G3157DW-7" H 6700 6000 50  0001 C CNN "Part Number"
+F 6 "IC SWITCH SPDT 6 OHM SOT363" V 6564 5772 50  0001 R CNN "Description"
+	1    6700 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5CB72BC0
+P 7050 6000
+F 0 "#PWR?" H 7050 5850 50  0001 C CNN
+F 1 "VCC" H 7050 6150 50  0000 C CNN
+F 2 "" H 7050 6000 60  0000 C CNN
+F 3 "" H 7050 6000 60  0000 C CNN
+	1    7050 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 6000 7050 6000
+$Comp
+L power:GND #PWR?
+U 1 1 5CB72BC7
+P 6350 5950
+F 0 "#PWR?" H 6350 5700 50  0001 C CNN
+F 1 "GND" H 6350 5800 50  0000 C CNN
+F 2 "" H 6350 5950 50  0000 C CNN
+F 3 "" H 6350 5950 50  0000 C CNN
+	1    6350 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 6000 6400 6000
+Text Label 7200 5900 2    40   ~ 0
+P5_0
+Wire Wire Line
+	7000 5900 7200 5900
+NoConn ~ 6400 6100
+Wire Wire Line
+	4150 6900 5150 6900
+Wire Wire Line
+	7000 6100 7200 6100
+Wire Wire Line
+	7200 6100 7200 6850
+Connection ~ 7200 6850
+Wire Wire Line
+	7200 6850 7550 6850
+Wire Wire Line
+	6400 5900 6350 5900
+Wire Wire Line
+	6350 5900 6350 5950
+Connection ~ 6350 5950
+Wire Wire Line
+	6350 5950 6350 6000
 $EndSCHEMATC
