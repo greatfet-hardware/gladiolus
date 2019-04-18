@@ -4051,10 +4051,6 @@ Wire Wire Line
 Wire Wire Line
 	5050 7400 5150 7400
 Wire Wire Line
-	6100 7500 6450 7500
-Wire Wire Line
-	5950 7400 6400 7400
-Wire Wire Line
 	3400 6500 3400 6650
 Wire Wire Line
 	4700 9300 4700 9400
@@ -4414,8 +4410,6 @@ Wire Wire Line
 Connection ~ 1400 3300
 Text Label 1400 2800 1    50   ~ 0
 P2_1
-Text Notes 6600 8350 0    50   ~ 0
-short +/- inputs\nto turn off TX
 $Comp
 L Device:C C29
 U 1 1 5C93BED7
@@ -4459,73 +4453,8 @@ Wire Wire Line
 Wire Wire Line
 	1900 2900 1900 4400
 NoConn ~ 1600 4150
-$Comp
-L gsg-symbols:74LVC1G3157 U7
-U 1 1 5CA8792E
-P 6900 8550
-F 0 "U7" V 6946 8322 50  0000 R CNN
-F 1 "74LVC1G3157" V 6855 8322 50  0000 R CNN
-F 2 "gsg-modules:SOT363" H 6900 8550 50  0001 C CNN
-F 3 "" H 6900 8550 50  0001 C CNN
-F 4 "Diodes Incorporated" V 6855 8322 50  0001 R CNN "Manufacturer"
-F 5 "74LVC1G3157DW-7" H 6900 8550 50  0001 C CNN "Part Number"
-F 6 "IC SWITCH SPDT 6 OHM SOT363" V 6764 8322 50  0001 R CNN "Description"
-	1    6900 8550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0106
-U 1 1 5CAEC765
-P 7250 8550
-F 0 "#PWR0106" H 7250 8400 50  0001 C CNN
-F 1 "VCC" H 7250 8700 50  0000 C CNN
-F 2 "" H 7250 8550 60  0000 C CNN
-F 3 "" H 7250 8550 60  0000 C CNN
-	1    7250 8550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7200 8550 7250 8550
-$Comp
-L power:GND #PWR0107
-U 1 1 5CB4C675
-P 6550 8550
-F 0 "#PWR0107" H 6550 8300 50  0001 C CNN
-F 1 "GND" H 6550 8400 50  0000 C CNN
-F 2 "" H 6550 8550 50  0000 C CNN
-F 3 "" H 6550 8550 50  0000 C CNN
-	1    6550 8550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6550 8550 6600 8550
-Text Label 7400 8450 2    40   ~ 0
-P5_0
-Wire Wire Line
-	7200 8450 7400 8450
 Wire Wire Line
 	6550 7600 6550 7650
-Wire Wire Line
-	6450 7500 6450 8450
-Wire Wire Line
-	6450 8450 6600 8450
-Connection ~ 6450 7500
-Wire Wire Line
-	6450 7500 6550 7500
-NoConn ~ 6600 8650
-Wire Wire Line
-	6400 7400 6400 8400
-Wire Wire Line
-	6400 8400 6300 8400
-Wire Wire Line
-	6300 8400 6300 8750
-Wire Wire Line
-	6300 8750 7200 8750
-Wire Wire Line
-	7200 8750 7200 8650
-Connection ~ 6400 7400
-Wire Wire Line
-	6400 7400 6550 7400
 $Comp
 L Device:R R64
 U 1 1 5CDFA3FF
@@ -4698,7 +4627,6 @@ Text Label 9800 6350 1    40   ~ 0
 P5_0
 Wire Wire Line
 	9800 6150 9800 6350
-NoConn ~ 9600 5550
 Wire Wire Line
 	4150 6900 5150 6900
 Wire Wire Line
@@ -4727,13 +4655,13 @@ Wire Wire Line
 $Comp
 L power:VCC #PWR?
 U 1 1 5CBE6FDC
-P 9850 5500
-F 0 "#PWR?" H 9850 5350 50  0001 C CNN
-F 1 "VCC" H 9850 5650 50  0000 C CNN
-F 2 "" H 9850 5500 60  0000 C CNN
-F 3 "" H 9850 5500 60  0000 C CNN
-	1    9850 5500
-	0    1    1    0   
+P 9550 5500
+F 0 "#PWR?" H 9550 5350 50  0001 C CNN
+F 1 "VCC" H 9550 5650 50  0000 C CNN
+F 2 "" H 9550 5500 60  0000 C CNN
+F 3 "" H 9550 5500 60  0000 C CNN
+	1    9550 5500
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	9850 5500 9800 5500
@@ -4741,6 +4669,25 @@ Wire Wire Line
 	9800 5500 9800 5550
 Wire Wire Line
 	8850 6800 8850 7200
-Text Notes 9100 7700 0    50   ~ 0
-add test points to\ntransistor pins
+Text Notes 5900 6100 0    50   ~ 0
+TODO:\nadd test points to\ntransistor pins (and others)
+$Comp
+L power:GND #PWR?
+U 1 1 5CBF6F0D
+P 9850 5500
+F 0 "#PWR?" H 9850 5250 50  0001 C CNN
+F 1 "GND" H 9850 5350 50  0000 C CNN
+F 2 "" H 9850 5500 50  0000 C CNN
+F 3 "" H 9850 5500 50  0000 C CNN
+	1    9850 5500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9600 5550 9600 5500
+Wire Wire Line
+	9600 5500 9550 5500
+Wire Wire Line
+	6100 7500 6550 7500
+Wire Wire Line
+	5950 7400 6550 7400
 $EndSCHEMATC
