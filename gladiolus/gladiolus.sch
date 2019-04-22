@@ -6,7 +6,7 @@ $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "GreatFET Gladiolus"
-Date "2019-02-27"
+Date "2019-04-22"
 Rev ""
 Comp "Copyright 2015 Michael Ossmann"
 Comment1 "License: GPL v2"
@@ -1997,24 +1997,24 @@ $EndComp
 $Comp
 L power:VCC #PWR056
 U 1 1 585D3B5E
-P 1950 5100
-F 0 "#PWR056" H 1950 4950 50  0001 C CNN
-F 1 "VCC" H 1950 5250 50  0000 C CNN
-F 2 "" H 1950 5100 60  0000 C CNN
-F 3 "" H 1950 5100 60  0000 C CNN
-	1    1950 5100
-	1    0    0    -1  
+P 1950 5600
+F 0 "#PWR056" H 1950 5450 50  0001 C CNN
+F 1 "VCC" H 1950 5750 50  0000 C CNN
+F 2 "" H 1950 5600 60  0000 C CNN
+F 3 "" H 1950 5600 60  0000 C CNN
+	1    1950 5600
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR057
 U 1 1 585D3DE9
-P 1950 5600
-F 0 "#PWR057" H 1950 5350 50  0001 C CNN
-F 1 "GND" H 1950 5450 50  0000 C CNN
-F 2 "" H 1950 5600 50  0000 C CNN
-F 3 "" H 1950 5600 50  0000 C CNN
-	1    1950 5600
-	1    0    0    -1  
+P 1950 5100
+F 0 "#PWR057" H 1950 4850 50  0001 C CNN
+F 1 "GND" H 1950 4950 50  0000 C CNN
+F 2 "" H 1950 5100 50  0000 C CNN
+F 3 "" H 1950 5100 50  0000 C CNN
+	1    1950 5100
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R8
@@ -2055,7 +2055,6 @@ F 3 "" H 1950 5350 50  0000 C CNN
 F 4 "Bourns" H 1950 5350 60  0001 C CNN "Manufacturer"
 F 5 "3306F-1-103" H 1950 5350 60  0001 C CNN "Part Number"
 F 6 "10k Ohm 0.2W, 1/5W PC Pins Through Hole Trimmer Potentiometer Cermet 1 Turn Top Adjustment" H 1950 5350 60  0001 C CNN "Description"
-F 7 "DNP" H 1950 5200 60  0000 C CNN "Note"
 	1    1950 5350
 	1    0    0    1   
 $EndComp
@@ -3492,7 +3491,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 3250 2200 3350
 Wire Wire Line
-	8450 7400 8550 7400
+	8450 7400 8500 7400
 Wire Wire Line
 	8850 8400 8850 8500
 Wire Wire Line
@@ -4015,7 +4014,7 @@ Wire Wire Line
 Wire Wire Line
 	15300 3800 15500 3800
 Wire Wire Line
-	5650 6900 5450 6900
+	5650 6900 5500 6900
 Wire Wire Line
 	4150 6900 4150 7200
 Wire Wire Line
@@ -4331,8 +4330,6 @@ F 6 "IC SWITCH SPDT 6 OHM SOT363" V 1364 3622 50  0001 R CNN "Description"
 	1    1500 3850
 	0    -1   -1   0   
 $EndComp
-Text Label 1100 2800 1    50   ~ 0
-P3_5
 Wire Wire Line
 	1500 4150 1500 4200
 Wire Wire Line
@@ -4408,7 +4405,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 3100 1400 3300
 Connection ~ 1400 3300
-Text Label 1400 2800 1    50   ~ 0
+Text Label 1100 2800 1    50   ~ 0
 P2_1
 $Comp
 L Device:C C29
@@ -4477,7 +4474,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 6900 5650 7500
 Wire Wire Line
-	3850 7500 5050 7500
+	3850 7500 4800 7500
 Wire Wire Line
 	3850 7400 4150 7400
 Wire Wire Line
@@ -4494,7 +4491,6 @@ NoConn ~ 15300 2300
 NoConn ~ 15300 2400
 NoConn ~ 15300 2500
 NoConn ~ 15300 2600
-NoConn ~ 15300 2700
 NoConn ~ 15200 3100
 NoConn ~ 16300 3100
 NoConn ~ 16200 3000
@@ -4545,38 +4541,9 @@ NoConn ~ 15850 7050
 NoConn ~ 15950 7050
 Wire Wire Line
 	8850 8000 9250 8000
-$Comp
-L Connector:Conn_01x02_Female J3
-U 1 1 5C85EBB0
-P 9600 8200
-F 0 "J3" H 9627 8176 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 9627 8085 50  0000 L CNN
-F 2 "gsg-modules:HEADER-1x2" H 9600 8200 50  0001 C CNN
-F 3 "~" H 9600 8200 50  0001 C CNN
-F 4 "DNP" H 9600 8200 50  0001 C CNN "Note"
-	1    9600 8200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9250 8000 9250 8200
-Wire Wire Line
-	9250 8200 9400 8200
 Connection ~ 9250 8000
 Wire Wire Line
 	9250 8000 9350 8000
-$Comp
-L power:GND #PWR0108
-U 1 1 5C8BF1A4
-P 9350 8300
-F 0 "#PWR0108" H 9350 8050 50  0001 C CNN
-F 1 "GND" H 9350 8150 50  0000 C CNN
-F 2 "" H 9350 8300 50  0000 C CNN
-F 3 "" H 9350 8300 50  0000 C CNN
-	1    9350 8300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9350 8300 9400 8300
 Wire Wire Line
 	8850 6500 8850 6350
 Wire Wire Line
@@ -4584,10 +4551,10 @@ Wire Wire Line
 Wire Wire Line
 	15800 3450 16100 3450
 $Comp
-L gsg-symbols:74LVC1G3157 U?
+L gsg-symbols:74LVC1G3157 U7
 U 1 1 5CB72BB9
 P 9700 5850
-F 0 "U?" V 9746 5622 50  0000 R CNN
+F 0 "U7" V 9746 5622 50  0000 R CNN
 F 1 "74LVC1G3157" V 9655 5622 50  0000 R CNN
 F 2 "gsg-modules:SOT363" H 9700 5850 50  0001 C CNN
 F 3 "" H 9700 5850 50  0001 C CNN
@@ -4598,10 +4565,10 @@ F 6 "IC SWITCH SPDT 6 OHM SOT363" V 9564 5622 50  0001 R CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0106
 U 1 1 5CB72BC0
 P 9700 6200
-F 0 "#PWR?" H 9700 6050 50  0001 C CNN
+F 0 "#PWR0106" H 9700 6050 50  0001 C CNN
 F 1 "VCC" H 9700 6350 50  0000 C CNN
 F 2 "" H 9700 6200 60  0000 C CNN
 F 3 "" H 9700 6200 60  0000 C CNN
@@ -4611,10 +4578,10 @@ $EndComp
 Wire Wire Line
 	9700 6150 9700 6200
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0107
 U 1 1 5CB72BC7
 P 9700 5500
-F 0 "#PWR?" H 9700 5250 50  0001 C CNN
+F 0 "#PWR0107" H 9700 5250 50  0001 C CNN
 F 1 "GND" H 9700 5350 50  0000 C CNN
 F 2 "" H 9700 5500 50  0000 C CNN
 F 3 "" H 9700 5500 50  0000 C CNN
@@ -4634,10 +4601,10 @@ Wire Wire Line
 Wire Wire Line
 	9600 6350 8850 6350
 $Comp
-L Device:R R?
+L Device:R R24
 U 1 1 5CB7D036
 P 5850 9750
-F 0 "R?" V 5930 9750 50  0000 C CNN
+F 0 "R24" V 5930 9750 50  0000 C CNN
 F 1 "1k" V 5850 9750 50  0000 C CNN
 F 2 "gsg-modules:0603" V 5780 9750 50  0001 C CNN
 F 3 "" H 5850 9750 50  0000 C CNN
@@ -4648,15 +4615,13 @@ F 7 "DNP" V 6000 9750 60  0000 C CNN "Note"
 	1    5850 9750
 	1    0    0    -1  
 $EndComp
-Text Notes 6250 9550 0    50   ~ 0
-TODO: remove DNPs?
 Wire Wire Line
-	7100 6850 7550 6850
+	7100 6850 7300 6850
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0108
 U 1 1 5CBE6FDC
 P 9550 5500
-F 0 "#PWR?" H 9550 5350 50  0001 C CNN
+F 0 "#PWR0108" H 9550 5350 50  0001 C CNN
 F 1 "VCC" H 9550 5650 50  0000 C CNN
 F 2 "" H 9550 5500 60  0000 C CNN
 F 3 "" H 9550 5500 60  0000 C CNN
@@ -4667,15 +4632,11 @@ Wire Wire Line
 	9850 5500 9800 5500
 Wire Wire Line
 	9800 5500 9800 5550
-Wire Wire Line
-	8850 6800 8850 7200
-Text Notes 5900 6100 0    50   ~ 0
-TODO:\nadd test points to\ntransistor pins (and others)
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0109
 U 1 1 5CBF6F0D
 P 9850 5500
-F 0 "#PWR?" H 9850 5250 50  0001 C CNN
+F 0 "#PWR0109" H 9850 5250 50  0001 C CNN
 F 1 "GND" H 9850 5350 50  0000 C CNN
 F 2 "" H 9850 5500 50  0000 C CNN
 F 3 "" H 9850 5500 50  0000 C CNN
@@ -4689,5 +4650,123 @@ Wire Wire Line
 Wire Wire Line
 	6100 7500 6550 7500
 Wire Wire Line
-	5950 7400 6550 7400
+	5950 7400 6000 7400
+Text Label 1400 2800 1    40   ~ 0
+P6_7
+NoConn ~ 15300 3000
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5CCC58CD
+P 9250 7800
+F 0 "TP7" H 9308 7920 50  0000 L CNN
+F 1 "TestPoint" H 9308 7829 50  0000 L CNN
+F 2 "gsg-modules:TESTPOINT-50MIL" H 9450 7800 50  0001 C CNN
+F 3 "~" H 9450 7800 50  0001 C CNN
+	1    9250 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 7800 9250 8000
+Wire Wire Line
+	8850 6800 8850 7150
+Wire Wire Line
+	8850 7150 8950 7150
+Connection ~ 8850 7150
+Wire Wire Line
+	8850 7150 8850 7200
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5CDE186E
+P 8950 7150
+F 0 "TP6" V 8904 7338 50  0000 L CNN
+F 1 "TestPoint" V 8995 7338 50  0000 L CNN
+F 2 "gsg-modules:TESTPOINT-50MIL" H 9150 7150 50  0001 C CNN
+F 3 "~" H 9150 7150 50  0001 C CNN
+	1    8950 7150
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5CDE1A4D
+P 8250 7200
+F 0 "TP5" H 8308 7320 50  0000 L CNN
+F 1 "TestPoint" H 8308 7229 50  0000 L CNN
+F 2 "gsg-modules:TESTPOINT-50MIL" H 8450 7200 50  0001 C CNN
+F 3 "~" H 8450 7200 50  0001 C CNN
+	1    8250 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 7200 8250 7250
+Wire Wire Line
+	8250 7250 8500 7250
+Wire Wire Line
+	8500 7250 8500 7400
+Connection ~ 8500 7400
+Wire Wire Line
+	8500 7400 8550 7400
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5CE408DE
+P 7300 6800
+F 0 "TP4" H 7358 6920 50  0000 L CNN
+F 1 "TestPoint" H 7358 6829 50  0000 L CNN
+F 2 "gsg-modules:TESTPOINT-50MIL" H 7500 6800 50  0001 C CNN
+F 3 "~" H 7500 6800 50  0001 C CNN
+	1    7300 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 6800 7300 6850
+Connection ~ 7300 6850
+Wire Wire Line
+	7300 6850 7550 6850
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5CEA08FF
+P 5500 6850
+F 0 "TP2" H 5558 6970 50  0000 L CNN
+F 1 "TestPoint" H 5558 6879 50  0000 L CNN
+F 2 "gsg-modules:TESTPOINT-50MIL" H 5700 6850 50  0001 C CNN
+F 3 "~" H 5700 6850 50  0001 C CNN
+	1    5500 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 6850 5500 6900
+Connection ~ 5500 6900
+Wire Wire Line
+	5500 6900 5450 6900
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5CF024CE
+P 6000 7350
+F 0 "TP3" H 6058 7470 50  0000 L CNN
+F 1 "TestPoint" H 6058 7379 50  0000 L CNN
+F 2 "gsg-modules:TESTPOINT-50MIL" H 6200 7350 50  0001 C CNN
+F 3 "~" H 6200 7350 50  0001 C CNN
+	1    6000 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 7350 6000 7400
+Connection ~ 6000 7400
+Wire Wire Line
+	6000 7400 6550 7400
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5CF63767
+P 4800 7550
+F 0 "TP1" H 4742 7577 50  0000 R CNN
+F 1 "TestPoint" H 4742 7668 50  0000 R CNN
+F 2 "gsg-modules:TESTPOINT-50MIL" H 5000 7550 50  0001 C CNN
+F 3 "~" H 5000 7550 50  0001 C CNN
+	1    4800 7550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4800 7550 4800 7500
+Connection ~ 4800 7500
+Wire Wire Line
+	4800 7500 5050 7500
 $EndSCHEMATC
