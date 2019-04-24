@@ -2113,10 +2113,6 @@ F 3 "" H 13200 5450 50  0000 C CNN
 	1    13200 5450
 	1    0    0    -1  
 $EndComp
-Text Label 13800 4950 2    40   ~ 0
-P9_6
-Text Notes 13850 4950 0    40   ~ 0
-SGPIO8
 Text Label 6850 800  3    40   ~ 0
 ADC0_0
 Text Label 7100 800  3    40   ~ 0
@@ -4498,14 +4494,12 @@ NoConn ~ 16200 2700
 NoConn ~ 16200 2600
 NoConn ~ 16200 2500
 NoConn ~ 16200 2400
-NoConn ~ 16200 2300
 NoConn ~ 16200 2200
 NoConn ~ 16200 1900
 NoConn ~ 16200 1800
 NoConn ~ 16200 1700
 NoConn ~ 16200 1600
 NoConn ~ 16200 1500
-NoConn ~ 16200 1400
 NoConn ~ 16200 1300
 NoConn ~ 15300 3900
 NoConn ~ 15300 4000
@@ -4520,7 +4514,6 @@ NoConn ~ 15300 5700
 NoConn ~ 16200 5700
 NoConn ~ 16200 5600
 NoConn ~ 16200 5500
-NoConn ~ 16200 4900
 NoConn ~ 16200 4200
 NoConn ~ 16200 4300
 NoConn ~ 14350 7050
@@ -4590,10 +4583,6 @@ F 3 "" H 9700 5500 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	9700 5500 9700 5550
-Text Label 9800 6350 1    40   ~ 0
-P5_0
-Wire Wire Line
-	9800 6150 9800 6350
 Wire Wire Line
 	4150 6900 5150 6900
 Wire Wire Line
@@ -4769,4 +4758,15 @@ Wire Wire Line
 Connection ~ 4800 7500
 Wire Wire Line
 	4800 7500 5050 7500
+Wire Wire Line
+	9800 6200 9800 6150
+Wire Wire Line
+	9800 6200 9850 6200
+NoConn ~ 16200 2300
+Text Label 9850 6200 0    40   ~ 0
+P5_4
+Text Label 13800 4950 2    40   ~ 0
+P4_5
+NoConn ~ 16200 5300
+NoConn ~ 16200 5400
 $EndSCHEMATC
