@@ -4825,10 +4825,6 @@ F 3 "~" H 12000 6100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11700 6100 11750 6100
-Text Notes 10400 6000 0    50   ~ 0
-TODO: Add footprint
-Text Notes 9600 7350 0    50   ~ 0
-TODO: test points on bottom
 $Comp
 L power:VCC #PWR0112
 U 1 1 5CDFF9D4
@@ -5051,4 +5047,6 @@ Wire Wire Line
 	10600 3350 11700 3350
 Wire Wire Line
 	10600 3450 11700 3450
+Text Notes 6800 750  0    50   ~ 0
+VDBS: 0-1.5V
 $EndSCHEMATC
