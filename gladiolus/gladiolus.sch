@@ -4252,8 +4252,8 @@ Connection ~ 1650 2650
 Wire Wire Line
 	1650 2650 1650 2700
 Connection ~ 2200 2650
-Text Notes 1850 4600 2    50   ~ 0
-B0: AC coupled\nB1: DC coupled
+Text Notes 1200 4600 0    50   ~ 0
+B0: AC coupled\nB1: DC coupled (default)
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5C7387E5
