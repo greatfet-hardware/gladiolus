@@ -283,18 +283,18 @@ $EndComp
 Text Notes 14750 7250 1    40   ~ 0
 BOOT
 $Comp
-L gladiolus-rescue:CONN_01X20-gladiolus-rescue J7
+L Connector_Generic:Conn_01x20 J7
 U 1 1 560E713A
-P 15200 6500
-F 0 "J7" H 15200 7550 50  0000 C CNN
-F 1 "BONUS_ROW" V 15300 6500 50  0000 C CNN
-F 2 "gsg-modules:HEADER-1x20" H 15200 6500 60  0001 C CNN
-F 3 "" H 15200 6500 60  0000 C CNN
-F 4 "Samtec" H 15200 6500 60  0001 C CNN "Manufacturer"
-F 5 "SSQ-120-23-G-S" H 15200 6500 60  0001 C CNN "Part Number"
-F 6 "CONN RCPT .100\" 20POS SINGLE-ROW STACKING GOLD" H 15200 6500 60  0001 C CNN "Description"
-F 7 "DNP" V 15400 6500 60  0000 C CNN "Note"
-	1    15200 6500
+P 15150 6500
+F 0 "J7" H 15150 7550 50  0000 C CNN
+F 1 "BONUS_ROW" V 15250 6500 50  0000 C CNN
+F 2 "gsg-modules:HEADER-1x20" H 15150 6500 60  0001 C CNN
+F 3 "" H 15150 6500 60  0000 C CNN
+F 4 "Samtec" H 15150 6500 60  0001 C CNN "Manufacturer"
+F 5 "SSQ-120-23-G-S" H 15150 6500 60  0001 C CNN "Part Number"
+F 6 "CONN RCPT .100\" 20POS SINGLE-ROW STACKING GOLD" H 15150 6500 60  0001 C CNN "Description"
+F 7 "DNP" V 15350 6500 60  0000 C CNN "Note"
+	1    15150 6500
 	0    -1   -1   0   
 $EndComp
 Text Label 14650 7050 1    40   ~ 0
@@ -302,7 +302,7 @@ ADC0_2
 Text Label 14550 7050 1    40   ~ 0
 ADC0_5
 $Comp
-L gladiolus-rescue:CONN_01X01-gladiolus-rescue MH3
+L Connector_Generic:Conn_01x01 MH3
 U 1 1 5600EED5
 P 13650 800
 F 0 "MH3" H 13600 900 50  0000 C CNN
@@ -325,7 +325,7 @@ F 3 "" H 13650 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L gladiolus-rescue:CONN_01X01-gladiolus-rescue MH4
+L Connector_Generic:Conn_01x01 MH4
 U 1 1 560100F3
 P 14150 950
 F 0 "MH4" H 14100 1050 50  0000 C CNN
@@ -348,7 +348,7 @@ F 3 "" H 14150 1250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L gladiolus-rescue:CONN_01X01-gladiolus-rescue MH1
+L Connector_Generic:Conn_01x01 MH1
 U 1 1 56010ADB
 P 12650 800
 F 0 "MH1" H 12600 900 50  0000 C CNN
@@ -371,7 +371,7 @@ F 3 "" H 12650 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L gladiolus-rescue:CONN_01X01-gladiolus-rescue MH2
+L Connector_Generic:Conn_01x01 MH2
 U 1 1 56010AE9
 P 13150 950
 F 0 "MH2" H 13100 1050 50  0000 C CNN
