@@ -1925,34 +1925,6 @@ F 6 "FIXED IND 2.2UH 30MA 1.3 OHM SMD" H 4850 3650 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R15
-U 1 1 585C8E08
-P 5700 3150
-F 0 "R15" V 5780 3150 50  0000 C CNN
-F 1 "0" V 5700 3150 50  0000 C CNN
-F 2 "gsg-modules:0402" V 5630 3150 50  0001 C CNN
-F 3 "" H 5700 3150 50  0000 C CNN
-F 4 "Yageo" H 5700 3150 60  0001 C CNN "Manufacturer"
-F 5 "RC0402JR-070RL" H 5700 3150 60  0001 C CNN "Part Number"
-F 6 "RES SMD 0.0OHM JUMPER 1/16W 0402" H 5700 3150 60  0001 C CNN "Description"
-	1    5700 3150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R16
-U 1 1 585C8E11
-P 5700 3650
-F 0 "R16" V 5780 3650 50  0000 C CNN
-F 1 "0" V 5700 3650 50  0000 C CNN
-F 2 "gsg-modules:0402" V 5630 3650 50  0001 C CNN
-F 3 "" H 5700 3650 50  0000 C CNN
-F 4 "Yageo" H 5700 3650 60  0001 C CNN "Manufacturer"
-F 5 "RC0402JR-070RL" H 5700 3650 60  0001 C CNN "Part Number"
-F 6 "RES SMD 0.0OHM JUMPER 1/16W 0402" H 5700 3650 60  0001 C CNN "Description"
-	1    5700 3650
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:L_Small L4
 U 1 1 585CBA48
 P 5250 3650
@@ -4044,10 +4016,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 2650 3000 2750
 Wire Wire Line
-	5450 3650 5550 3650
-Wire Wire Line
-	5450 3150 5550 3150
-Wire Wire Line
 	5050 3650 5150 3650
 Wire Wire Line
 	5050 3150 5150 3150
@@ -4220,32 +4188,6 @@ Wire Wire Line
 	13450 1800 13450 1850
 Wire Wire Line
 	13800 1900 13800 1950
-$Comp
-L Device:R R77
-U 1 1 5C8E0748
-P 7050 4350
-F 0 "R77" V 7130 4350 50  0000 C CNN
-F 1 "0" V 7050 4350 50  0000 C CNN
-F 2 "gsg-modules:0603" V 6980 4350 50  0001 C CNN
-F 3 "" H 7050 4350 50  0000 C CNN
-F 4 "Yageo" H 7050 4350 60  0001 C CNN "Manufacturer"
-F 5 "RC0603JR-070RL" H 7050 4350 60  0001 C CNN "Part Number"
-F 6 "RES SMD 0.0OHM JUMPER 1/10W 0603" H 7050 4350 60  0001 C CNN "Description"
-	1    7050 4350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R78
-U 1 1 5C8E1B74
-P 7250 4350
-F 0 "R78" V 7330 4350 50  0000 C CNN
-F 1 "0" V 7250 4350 50  0000 C CNN
-F 2 "gsg-modules:0603" V 7180 4350 50  0001 C CNN
-F 3 "" H 7250 4350 50  0000 C CNN
-F 4 "DNP" V 7150 4350 60  0000 C CNN "Note"
-	1    7250 4350
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C29
 U 1 1 5C93BED7
@@ -4446,7 +4388,7 @@ Wire Wire Line
 	6100 7500 6550 7500
 Wire Wire Line
 	5950 7400 6000 7400
-Text Label 7250 4200 1    40   ~ 0
+Text Label 6950 4350 2    40   ~ 0
 P6_7
 NoConn ~ 15300 3000
 $Comp
@@ -4668,7 +4610,7 @@ F 3 "~" H 9100 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 15300 2400
-Text Label 7050 4200 1    40   ~ 0
+Text Label 7450 4350 0    40   ~ 0
 P9_5
 Wire Wire Line
 	4650 4300 4650 4250
@@ -4958,15 +4900,6 @@ Connection ~ 1650 2350
 Wire Wire Line
 	1650 2350 1650 2650
 Wire Wire Line
-	6950 4550 7050 4550
-Wire Wire Line
-	7050 4550 7050 4500
-Wire Wire Line
-	7050 4550 7250 4550
-Wire Wire Line
-	7250 4550 7250 4500
-Connection ~ 7050 4550
-Wire Wire Line
 	6950 4650 7000 4650
 Wire Wire Line
 	6300 4650 6350 4650
@@ -5078,8 +5011,6 @@ Wire Wire Line
 Wire Wire Line
 	5850 3650 5850 4650
 Wire Wire Line
-	5850 3150 5900 3150
-Wire Wire Line
 	5900 3150 5900 4550
 Wire Wire Line
 	5900 4550 5800 4550
@@ -5087,4 +5018,26 @@ Wire Wire Line
 	5800 4550 5800 5150
 Wire Wire Line
 	5800 5150 5950 5150
+Wire Wire Line
+	5450 3150 5900 3150
+Wire Wire Line
+	5450 3650 5850 3650
+$Comp
+L Jumper:Jumper_3_Bridged12 JP2
+U 1 1 5D1C7C7C
+P 7200 4350
+F 0 "JP2" H 7200 4554 50  0000 C CNN
+F 1 "Jumper_3_Bridged12" H 7200 4463 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 7200 4350 50  0001 C CNN
+F 3 "~" H 7200 4350 50  0001 C CNN
+	1    7200 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4550 7200 4550
+Wire Wire Line
+	7200 4500 7200 4550
+Connection ~ 7200 4550
+Wire Wire Line
+	7200 4550 7250 4550
 $EndSCHEMATC
