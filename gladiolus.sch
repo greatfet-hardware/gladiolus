@@ -191,8 +191,6 @@ Text Label 15300 1900 0    40   ~ 0
 P2_6
 Text Label 16200 1700 2    40   ~ 0
 CLK2
-Text Label 15300 2500 0    40   ~ 0
-P7_0
 Text Label 16200 2400 2    40   ~ 0
 P3_0
 Text Label 15300 2400 0    40   ~ 0
@@ -776,28 +774,6 @@ F 1 "GND" H 7900 1550 50  0000 C CNN
 F 2 "" H 7900 1700 50  0000 C CNN
 F 3 "" H 7900 1700 50  0000 C CNN
 	1    7900 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR028
-U 1 1 5843D896
-P 6600 800
-F 0 "#PWR028" H 6600 650 50  0001 C CNN
-F 1 "VCC" H 6600 950 50  0000 C CNN
-F 2 "" H 6600 800 60  0000 C CNN
-F 3 "" H 6600 800 60  0000 C CNN
-	1    6600 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR029
-U 1 1 5843D89C
-P 6600 1700
-F 0 "#PWR029" H 6600 1450 50  0001 C CNN
-F 1 "GND" H 6600 1550 50  0000 C CNN
-F 2 "" H 6600 1700 50  0000 C CNN
-F 3 "" H 6600 1700 50  0000 C CNN
-	1    6600 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1431,21 +1407,6 @@ F 7 "DNP" V 8050 1200 60  0000 C CNN "Note"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_POT RV2
-U 1 1 58485812
-P 6600 1450
-F 0 "RV2" H 6600 1370 50  0000 C CNN
-F 1 "POT" H 6600 1450 50  0000 C CNN
-F 2 "gsg-modules:3306F" H 6600 1450 50  0001 C CNN
-F 3 "" H 6600 1450 50  0000 C CNN
-F 4 "Bourns" H 6600 1450 60  0001 C CNN "Manufacturer"
-F 5 "3306F-1-103" H 6600 1450 60  0001 C CNN "Part Number"
-F 6 "10k Ohm 0.2W, 1/5W PC Pins Through Hole Trimmer Potentiometer Cermet 1 Turn Top Adjustment" H 6600 1450 60  0001 C CNN "Description"
-F 7 "DNP" H 6600 1550 50  0000 C CNN "Note"
-	1    6600 1450
-	1    0    0    1   
-$EndComp
-$Comp
 L Device:R R39
 U 1 1 58489380
 P 13450 2800
@@ -1805,52 +1766,6 @@ F 2 "" H 4250 3750 50  0000 C CNN
 F 3 "" H 4250 3750 50  0000 C CNN
 	1    4250 3750
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R17
-U 1 1 585C8DA3
-P 6100 3050
-F 0 "R17" V 6180 3050 50  0000 C CNN
-F 1 "R" V 6100 3050 50  0000 C CNN
-F 2 "gsg-modules:0402" V 6030 3050 50  0001 C CNN
-F 3 "" H 6100 3050 50  0000 C CNN
-F 4 "DNP" V 6250 3050 60  0000 C CNN "Note"
-	1    6100 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R18
-U 1 1 585C8DAA
-P 6100 3900
-F 0 "R18" V 6180 3900 50  0000 C CNN
-F 1 "R" V 6100 3900 50  0000 C CNN
-F 2 "gsg-modules:0402" V 6030 3900 50  0001 C CNN
-F 3 "" H 6100 3900 50  0000 C CNN
-F 4 "DNP" V 6250 3900 60  0000 C CNN "Note"
-	1    6100 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR054
-U 1 1 585C8DB0
-P 6100 4150
-F 0 "#PWR054" H 6100 3900 50  0001 C CNN
-F 1 "GND" H 6100 4000 50  0000 C CNN
-F 2 "" H 6100 4150 50  0000 C CNN
-F 3 "" H 6100 4150 50  0000 C CNN
-	1    6100 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR055
-U 1 1 585C8DB6
-P 6100 2800
-F 0 "#PWR055" H 6100 2550 50  0001 C CNN
-F 1 "GND" H 6100 2650 50  0000 C CNN
-F 2 "" H 6100 2800 50  0000 C CNN
-F 3 "" H 6100 2800 50  0000 C CNN
-	1    6100 2800
-	-1   0    0    1   
 $EndComp
 $Comp
 L Device:L_Small L1
@@ -2990,20 +2905,6 @@ Text Label 3950 6050 2    40   ~ 0
 P5_0
 Text Notes 4000 6050 0    40   ~ 0
 GPIO2[9]
-$Comp
-L Device:R R75
-U 1 1 58829EB2
-P 6600 1050
-F 0 "R75" V 6680 1050 50  0000 C CNN
-F 1 "12k" V 6600 1050 50  0000 C CNN
-F 2 "gsg-modules:0603" V 6530 1050 50  0001 C CNN
-F 3 "" H 6600 1050 50  0000 C CNN
-F 4 "Yageo" H 6600 1050 60  0001 C CNN "Manufacturer"
-F 5 "RC0603JR-0712KL" H 6600 1050 60  0001 C CNN "Part Number"
-F 6 "RES SMD 12K OHM 5% 1/10W 0603" H 6600 1050 60  0001 C CNN "Description"
-	1    6600 1050
-	-1   0    0    1   
-$EndComp
 Text Label 1650 2050 0    40   ~ 0
 RXIN
 Text Label 8850 7100 1    40   ~ 0
@@ -3283,8 +3184,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 2650 4650 2650
 Wire Wire Line
-	7050 3450 6100 3450
-Wire Wire Line
 	5450 3150 5450 3250
 Wire Wire Line
 	5350 3150 5450 3150
@@ -3302,10 +3201,6 @@ Wire Wire Line
 	5050 3650 5050 3550
 Wire Wire Line
 	4950 3650 5050 3650
-Wire Wire Line
-	6100 4050 6100 4150
-Wire Wire Line
-	6100 2800 6100 2900
 Wire Wire Line
 	2800 1150 3100 1150
 Wire Wire Line
@@ -3617,13 +3512,6 @@ Wire Wire Line
 	7950 3250 8300 3250
 Wire Wire Line
 	8300 3950 8300 3850
-Connection ~ 6850 1450
-Wire Wire Line
-	6750 1450 6850 1450
-Wire Wire Line
-	6600 1300 6600 1200
-Wire Wire Line
-	6600 1700 6600 1600
 Connection ~ 8150 1450
 Wire Wire Line
 	8050 1450 8150 1450
@@ -3969,8 +3857,6 @@ Connection ~ 5850 7500
 Wire Wire Line
 	7550 7600 7350 7600
 Wire Wire Line
-	6600 800  6600 900 
-Wire Wire Line
 	5050 7500 5050 7400
 Wire Wire Line
 	5050 7400 5150 7400
@@ -4084,8 +3970,6 @@ Wire Wire Line
 	8700 3150 8700 3550
 Wire Wire Line
 	8300 3250 8300 3550
-Wire Wire Line
-	6850 1450 6850 1600
 Wire Wire Line
 	8150 1450 8150 3650
 Wire Wire Line
@@ -4240,8 +4124,6 @@ NoConn ~ 15200 2000
 NoConn ~ 15300 2100
 NoConn ~ 15300 2200
 NoConn ~ 15300 2300
-NoConn ~ 15300 2500
-NoConn ~ 15300 2600
 NoConn ~ 16200 3000
 NoConn ~ 16200 2700
 NoConn ~ 16200 2600
@@ -4252,7 +4134,6 @@ NoConn ~ 16200 1900
 NoConn ~ 16200 1800
 NoConn ~ 16200 1700
 NoConn ~ 16200 1600
-NoConn ~ 16200 1500
 NoConn ~ 16200 1300
 NoConn ~ 15300 3900
 NoConn ~ 15300 4000
@@ -4385,8 +4266,6 @@ Wire Wire Line
 	6100 7500 6550 7500
 Wire Wire Line
 	5950 7400 6000 7400
-Text Label 5500 4550 2    40   ~ 0
-P6_7
 NoConn ~ 15300 3000
 $Comp
 L Connector:TestPoint TP7
@@ -4503,10 +4382,8 @@ Wire Wire Line
 	4800 7500 5050 7500
 Wire Wire Line
 	9800 6200 9800 6150
-Wire Wire Line
-	9800 6200 9850 6200
 NoConn ~ 16200 2300
-Text Label 9850 6200 0    40   ~ 0
+Text Label 10000 6200 0    40   ~ 0
 P5_4
 Text Label 13800 4950 2    40   ~ 0
 P4_5
@@ -4523,13 +4400,13 @@ Wire Wire Line
 $Comp
 L Jumper:Jumper_3_Bridged12 JP1
 U 1 1 5CE53BBF
-P 5500 1550
-F 0 "JP1" H 5500 1754 50  0000 C CNN
-F 1 "Jumper_3_Bridged12" H 5500 1663 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 5500 1550 50  0001 C CNN
-F 3 "~" H 5500 1550 50  0001 C CNN
-	1    5500 1550
-	1    0    0    -1  
+P 4950 6150
+F 0 "JP1" H 4950 6354 50  0000 C CNN
+F 1 "Jumper_3_Bridged12" H 4950 6263 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 4950 6150 50  0001 C CNN
+F 3 "~" H 4950 6150 50  0001 C CNN
+	1    4950 6150
+	0    1    1    0   
 $EndComp
 $Comp
 L Connector:TestPoint TP9
@@ -4576,13 +4453,13 @@ $EndComp
 $Comp
 L Connector:TestPoint TP11
 U 1 1 5D384371
-P 4650 4300
-F 0 "TP11" H 4708 4420 50  0000 L CNN
-F 1 "TestPoint" H 4708 4329 50  0000 L CNN
-F 2 "gsg-modules:TESTPOINT-50MIL" H 4850 4300 50  0001 C CNN
-F 3 "~" H 4850 4300 50  0001 C CNN
-	1    4650 4300
-	-1   0    0    1   
+P 4700 4250
+F 0 "TP11" H 4758 4370 50  0000 L CNN
+F 1 "TestPoint" H 4758 4279 50  0000 L CNN
+F 2 "gsg-modules:TESTPOINT-50MIL" H 4900 4250 50  0001 C CNN
+F 3 "~" H 4900 4250 50  0001 C CNN
+	1    4700 4250
+	0    1    1    0   
 $EndComp
 $Comp
 L Connector:TestPoint TP13
@@ -4607,10 +4484,6 @@ F 3 "~" H 9100 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 15300 2400
-Text Label 6000 4550 0    40   ~ 0
-P9_5
-Wire Wire Line
-	4650 4300 4650 4250
 Connection ~ 4650 4250
 Wire Wire Line
 	4650 2650 4650 2600
@@ -4786,8 +4659,6 @@ Text Label 8950 750  2    50   ~ 0
 VDBS
 Wire Wire Line
 	8950 750  7700 750 
-Wire Wire Line
-	6850 750  6850 1450
 $Comp
 L Device:R R21
 U 1 1 5DC4A111
@@ -4835,12 +4706,10 @@ Wire Wire Line
 	8050 2900 8050 3050
 Text Notes 7800 2600 0    50   ~ 0
 offset compensation\n(optional)
-Text Label 5250 1550 2    40   ~ 0
+Text Label 4950 5900 1    40   ~ 0
 ADC0_5
-Text Label 5750 1550 0    40   ~ 0
+Text Label 4950 6400 3    40   ~ 0
 ADC0_2
-Wire Wire Line
-	5500 1700 5500 1750
 $Comp
 L Device:C C24
 U 1 1 5E0768EC
@@ -4872,13 +4741,13 @@ $EndComp
 $Comp
 L power:GND #PWR046
 U 1 1 5E07CB44
-P 4850 4850
-F 0 "#PWR046" H 4850 4600 50  0001 C CNN
-F 1 "GND" V 4800 4750 50  0000 R CNN
-F 2 "" H 4850 4850 50  0001 C CNN
-F 3 "" H 4850 4850 50  0001 C CNN
-	1    4850 4850
-	0    1    1    0   
+P 4800 4900
+F 0 "#PWR046" H 4800 4650 50  0001 C CNN
+F 1 "GND" H 4850 4750 50  0000 R CNN
+F 2 "" H 4800 4900 50  0001 C CNN
+F 3 "" H 4800 4900 50  0001 C CNN
+	1    4800 4900
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR075
@@ -4898,21 +4767,10 @@ Wire Wire Line
 	1650 2350 1650 2650
 Wire Wire Line
 	5500 4850 5550 4850
-Wire Wire Line
-	4850 4850 4900 4850
-Text Label 5800 4750 0    50   ~ 0
+Text Label 6550 4800 2    50   ~ 0
 ACDC_sel
 Text Label 6600 3450 0    50   ~ 0
 INLO
-Wire Wire Line
-	6100 3450 6100 3750
-Wire Wire Line
-	6100 3350 6100 3200
-Connection ~ 6100 3350
-Wire Wire Line
-	6100 3350 7050 3350
-Wire Wire Line
-	6000 3350 6100 3350
 Text Label 6600 3350 0    50   ~ 0
 INHI
 $Comp
@@ -4969,26 +4827,19 @@ Wire Wire Line
 	5600 2250 5650 2250
 Wire Wire Line
 	4950 2250 5000 2250
-Text Label 5600 2150 0    50   ~ 0
+Text Label 5700 2150 0    50   ~ 0
 ACDC_sel
 $Comp
 L Jumper:Jumper_3_Bridged12 JP2
 U 1 1 5D1C7C7C
-P 5750 4550
-F 0 "JP2" H 5750 4754 50  0000 C CNN
-F 1 "Jumper_3_Bridged12" H 5750 4663 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 5750 4550 50  0001 C CNN
-F 3 "~" H 5750 4550 50  0001 C CNN
-	1    5750 4550
+P 7300 4600
+F 0 "JP2" H 7300 4804 50  0000 C CNN
+F 1 "Jumper_3_Bridged12" H 7300 4713 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 7300 4600 50  0001 C CNN
+F 3 "~" H 7300 4600 50  0001 C CNN
+	1    7300 4600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5500 4750 5750 4750
-Wire Wire Line
-	5750 4700 5750 4750
-Connection ~ 5750 4750
-Wire Wire Line
-	5750 4750 5800 4750
 Wire Wire Line
 	5450 3650 5550 3650
 Connection ~ 5450 3650
@@ -5000,21 +4851,11 @@ Wire Wire Line
 Wire Wire Line
 	5900 3150 5900 3350
 Wire Wire Line
-	5900 3350 6000 3350
-Connection ~ 6000 3350
-Wire Wire Line
 	5850 3650 5900 3650
 Wire Wire Line
 	5900 3650 5900 3450
-Wire Wire Line
-	5900 3450 6100 3450
-Connection ~ 6100 3450
 NoConn ~ 5000 2350
 NoConn ~ 4900 4950
-Wire Wire Line
-	5500 1750 6000 1750
-Wire Wire Line
-	6000 1750 6000 3350
 Wire Wire Line
 	5450 3150 5450 2550
 Wire Wire Line
@@ -5057,4 +4898,260 @@ Wire Wire Line
 Connection ~ 7700 750 
 Wire Wire Line
 	7700 750  6850 750 
+$Comp
+L gsg-symbols:74LVC1G3157 U10
+U 1 1 5D504E78
+P 4650 5800
+F 0 "U10" H 4700 5600 50  0000 R CNN
+F 1 "74LVC1G3157" H 4900 6000 50  0000 R CNN
+F 2 "gsg-modules:SOT363" H 4650 5800 50  0001 C CNN
+F 3 "" H 4650 5800 50  0001 C CNN
+F 4 "Diodes Incorporated" V 4605 5572 50  0001 R CNN "Manufacturer"
+F 5 "74LVC1G3157DW-7" H 4650 5800 50  0001 C CNN "Part Number"
+F 6 "IC SWITCH SPDT 6 OHM SOT363" V 4514 5572 50  0001 R CNN "Description"
+	1    4650 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 5D5DE49F
+P 4650 5450
+F 0 "#PWR0101" H 4650 5300 50  0001 C CNN
+F 1 "VCC" V 4667 5578 50  0000 L CNN
+F 2 "" H 4650 5450 50  0001 C CNN
+F 3 "" H 4650 5450 50  0001 C CNN
+	1    4650 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 5500 4650 5450
+Wire Wire Line
+	4650 4250 4700 4250
+NoConn ~ 4550 6100
+Wire Wire Line
+	4750 6100 4750 6150
+Wire Wire Line
+	4750 6150 4800 6150
+Wire Wire Line
+	4800 4900 4800 4850
+Wire Wire Line
+	4800 4850 4900 4850
+Wire Wire Line
+	4650 5150 4750 5150
+Wire Wire Line
+	4750 5150 4750 5500
+Wire Wire Line
+	4650 4250 4650 5150
+Wire Wire Line
+	6850 750  6850 1600
+Text Label 4550 5500 2    40   ~ 0
+P4_2
+NoConn ~ 15300 5400
+Text Label 15300 2500 0    40   ~ 0
+P7_0
+Text Label 7050 4600 2    50   ~ 0
+P7_0
+NoConn ~ 15300 2700
+Text Label 7550 4600 0    40   ~ 0
+P6_8
+$Comp
+L Device:R R68
+U 1 1 5DDB6EA3
+P 9950 6000
+F 0 "R68" V 10030 6000 50  0000 C CNN
+F 1 "10k" V 9950 6000 50  0000 C CNN
+F 2 "gsg-modules:0603" V 9880 6000 50  0001 C CNN
+F 3 "" H 9950 6000 50  0000 C CNN
+F 4 "Panasonic" H 9950 6000 60  0001 C CNN "Manufacturer"
+F 5 "ERJ-3GEYJ103V" H 9950 6000 60  0001 C CNN "Part Number"
+F 6 "RES SMD 10K OHM 5% 1/10W 0603" H 9950 6000 60  0001 C CNN "Description"
+	1    9950 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0104
+U 1 1 5DDB89B8
+P 9950 5800
+F 0 "#PWR0104" H 9950 5650 50  0001 C CNN
+F 1 "VCC" H 9950 5950 50  0000 C CNN
+F 2 "" H 9950 5800 60  0000 C CNN
+F 3 "" H 9950 5800 60  0000 C CNN
+	1    9950 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 6200 9950 6150
+Wire Wire Line
+	9800 6200 9950 6200
+Wire Wire Line
+	9950 5850 9950 5800
+Wire Wire Line
+	9950 6200 10000 6200
+Connection ~ 9950 6200
+$Comp
+L Device:R R15
+U 1 1 5DFE22C4
+P 4550 5300
+F 0 "R15" V 4630 5300 50  0000 C CNN
+F 1 "10k" V 4550 5300 50  0000 C CNN
+F 2 "gsg-modules:0603" V 4480 5300 50  0001 C CNN
+F 3 "" H 4550 5300 50  0000 C CNN
+F 4 "Panasonic" H 4550 5300 60  0001 C CNN "Manufacturer"
+F 5 "ERJ-3GEYJ103V" H 4550 5300 60  0001 C CNN "Part Number"
+F 6 "RES SMD 10K OHM 5% 1/10W 0603" H 4550 5300 60  0001 C CNN "Description"
+	1    4550 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0105
+U 1 1 5DFE9157
+P 4550 5100
+F 0 "#PWR0105" H 4550 4950 50  0001 C CNN
+F 1 "VCC" V 4567 5228 50  0000 L CNN
+F 2 "" H 4550 5100 50  0001 C CNN
+F 3 "" H 4550 5100 50  0001 C CNN
+	1    4550 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 5100 4550 5150
+Wire Wire Line
+	4550 5500 4550 5450
+$Comp
+L Device:R R16
+U 1 1 5E0CA3EB
+P 5650 1950
+F 0 "R16" V 5730 1950 50  0000 C CNN
+F 1 "10k" V 5650 1950 50  0000 C CNN
+F 2 "gsg-modules:0603" V 5580 1950 50  0001 C CNN
+F 3 "" H 5650 1950 50  0000 C CNN
+F 4 "Panasonic" H 5650 1950 60  0001 C CNN "Manufacturer"
+F 5 "ERJ-3GEYJ103V" H 5650 1950 60  0001 C CNN "Part Number"
+F 6 "RES SMD 10K OHM 5% 1/10W 0603" H 5650 1950 60  0001 C CNN "Description"
+	1    5650 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 2150 5650 2150
+Wire Wire Line
+	5650 2150 5650 2100
+Wire Wire Line
+	5650 2150 5700 2150
+Connection ~ 5650 2150
+Wire Wire Line
+	5650 1800 5650 1750
+$Comp
+L power:VCC #PWR0110
+U 1 1 5E21C3EE
+P 5650 1750
+F 0 "#PWR0110" H 5650 1600 50  0001 C CNN
+F 1 "VCC" V 5667 1878 50  0000 L CNN
+F 2 "" H 5650 1750 50  0001 C CNN
+F 3 "" H 5650 1750 50  0001 C CNN
+	1    5650 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3450 7050 3450
+Wire Wire Line
+	5900 3350 7050 3350
+$Comp
+L Device:R R17
+U 1 1 5D4A4C04
+P 7100 4800
+F 0 "R17" V 7180 4800 50  0000 C CNN
+F 1 "1k" V 7100 4800 50  0000 C CNN
+F 2 "gsg-modules:0603" V 7030 4800 50  0001 C CNN
+F 3 "" H 7100 4800 50  0000 C CNN
+F 4 "Yageo" H 7100 4800 60  0001 C CNN "Manufacturer"
+F 5 "RC0603JR-071KL" H 7100 4800 60  0001 C CNN "Part Number"
+F 6 "RES SMD 1K OHM 5% 1/10W 0603" H 7100 4800 60  0001 C CNN "Description"
+	1    7100 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7250 4800 7300 4800
+Wire Wire Line
+	7300 4800 7300 4750
+$Comp
+L Device:C C33
+U 1 1 5D516524
+P 6900 5000
+F 0 "C33" H 7100 4950 50  0000 R CNN
+F 1 "1nF" H 7100 5050 50  0000 R CNN
+F 2 "gsg-modules:0603" H 6938 4850 50  0001 C CNN
+F 3 "~" H 6900 5000 50  0001 C CNN
+F 4 "KEMET" H 6900 5000 50  0001 C CNN "Manufacturer"
+F 5 "C0603C102K4RECAUTO" H 6900 5000 50  0001 C CNN "Part Number"
+F 6 "CAP CER 0603 1NF 16V X7R 10%" H 6900 5000 50  0001 C CNN "Description"
+	1    6900 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6900 4800 6900 4850
+Wire Wire Line
+	6950 4800 6900 4800
+Wire Wire Line
+	6900 5150 6900 5200
+$Comp
+L power:GND #PWR0111
+U 1 1 5D667269
+P 6900 5200
+F 0 "#PWR0111" H 6900 4950 50  0001 C CNN
+F 1 "GND" H 6905 5027 50  0000 C CNN
+F 2 "" H 6900 5200 50  0001 C CNN
+F 3 "" H 6900 5200 50  0001 C CNN
+	1    6900 5200
+	1    0    0    -1  
+$EndComp
+Text Label 5500 4750 0    50   ~ 0
+ACDC_sel
+Connection ~ 6900 4800
+$Comp
+L Device:C C34
+U 1 1 5D6DB719
+P 6600 5000
+F 0 "C34" H 6800 4950 50  0000 R CNN
+F 1 "1nF" H 6800 5050 50  0000 R CNN
+F 2 "gsg-modules:0603" H 6638 4850 50  0001 C CNN
+F 3 "~" H 6600 5000 50  0001 C CNN
+F 4 "KEMET" H 6600 5000 50  0001 C CNN "Manufacturer"
+F 5 "C0603C102K4RECAUTO" H 6600 5000 50  0001 C CNN "Part Number"
+F 6 "CAP CER 0603 1NF 16V X7R 10%" H 6600 5000 50  0001 C CNN "Description"
+	1    6600 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6600 5150 6600 5200
+$Comp
+L power:GND #PWR0112
+U 1 1 5D6DB723
+P 6600 5200
+F 0 "#PWR0112" H 6600 4950 50  0001 C CNN
+F 1 "GND" H 6605 5027 50  0000 C CNN
+F 2 "" H 6600 5200 50  0001 C CNN
+F 3 "" H 6600 5200 50  0001 C CNN
+	1    6600 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 6100 4650 6150
+$Comp
+L power:GND #PWR0113
+U 1 1 5D8A2EA7
+P 4650 6150
+F 0 "#PWR0113" H 4650 5900 50  0001 C CNN
+F 1 "GND" H 4700 6000 50  0000 R CNN
+F 2 "" H 4650 6150 50  0001 C CNN
+F 3 "" H 4650 6150 50  0001 C CNN
+	1    4650 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4800 6600 4800
+Wire Wire Line
+	6600 4850 6600 4800
+Connection ~ 6600 4800
+Wire Wire Line
+	6600 4800 6900 4800
 $EndSCHEMATC
