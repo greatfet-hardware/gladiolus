@@ -634,8 +634,6 @@ F 6 "RES SMD 0.0OHM JUMPER 1/10W 0603" H 1650 1050 60  0001 C CNN "Description"
 	1    1650 1050
 	-1   0    0    1   
 $EndComp
-Text Label 1900 650  3    40   ~ 0
-VBUS
 $Comp
 L Device:C C3
 U 1 1 58438678
@@ -1250,35 +1248,6 @@ F 6 "FIXED IND 1UH 40MA 640 MOHM SMD" H 9900 3650 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R3
-U 1 1 5847F73E
-P 1900 1050
-F 0 "R3" V 1980 1050 50  0000 C CNN
-F 1 "0" V 1900 1050 50  0000 C CNN
-F 2 "gsg-modules:0603" V 1830 1050 50  0001 C CNN
-F 3 "" H 1900 1050 50  0000 C CNN
-F 4 "Yageo" H 1900 1050 60  0001 C CNN "Manufacturer"
-F 5 "RC0603JR-070RL" H 1900 1050 60  0001 C CNN "Part Number"
-F 6 "RES SMD 0.0OHM JUMPER 1/10W 0603" H 1900 1050 60  0001 C CNN "Description"
-F 7 "DNP" V 1800 1050 60  0000 C CNN "Note"
-	1    1900 1050
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R9
-U 1 1 5847FDC8
-P 2800 1400
-F 0 "R9" V 2880 1400 50  0000 C CNN
-F 1 "0" V 2800 1400 50  0000 C CNN
-F 2 "gsg-modules:0603" V 2730 1400 50  0001 C CNN
-F 3 "" H 2800 1400 50  0000 C CNN
-F 4 "Yageo" H 2800 1400 60  0001 C CNN "Manufacturer"
-F 5 "RC0603JR-070RL" H 2800 1400 60  0001 C CNN "Part Number"
-F 6 "RES SMD 0.0OHM JUMPER 1/10W 0603" H 2800 1400 60  0001 C CNN "Description"
-	1    2800 1400
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:R R23
 U 1 1 584803F5
 P 7200 2500
@@ -1290,20 +1259,6 @@ F 4 "Yageo" H 7200 2500 60  0001 C CNN "Manufacturer"
 F 5 "RC0603JR-070RL" H 7200 2500 60  0001 C CNN "Part Number"
 F 6 "RES SMD 0.0OHM JUMPER 1/10W 0603" H 7200 2500 60  0001 C CNN "Description"
 	1    7200 2500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R19
-U 1 1 5848061F
-P 6300 2350
-F 0 "R19" V 6380 2350 50  0000 C CNN
-F 1 "0" V 6300 2350 50  0000 C CNN
-F 2 "gsg-modules:0603" V 6230 2350 50  0001 C CNN
-F 3 "" H 6300 2350 50  0000 C CNN
-F 4 "Yageo" H 6300 2350 60  0001 C CNN "Manufacturer"
-F 5 "RC0603JR-070RL" H 6300 2350 60  0001 C CNN "Part Number"
-F 6 "RES SMD 0.0OHM JUMPER 1/10W 0603" H 6300 2350 60  0001 C CNN "Description"
-	1    6300 2350
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -3204,11 +3159,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 1150 3100 1150
 Wire Wire Line
-	6050 1150 6050 2350
-Wire Wire Line
-	6050 2350 6150 2350
-Wire Wire Line
-	6750 2350 6450 2350
+	6050 1150 6050 3150
 Connection ~ 4250 3250
 Connection ~ 3900 3250
 Wire Wire Line
@@ -3527,20 +3478,11 @@ Wire Wire Line
 Connection ~ 2800 1150
 Wire Wire Line
 	2800 800  2800 1150
-Wire Wire Line
-	2800 2750 2800 1550
-Wire Wire Line
-	6750 3150 6750 2350
 Connection ~ 6450 3250
 Wire Wire Line
 	6450 3550 6450 3250
 Wire Wire Line
 	6450 3950 6450 3850
-Wire Wire Line
-	1900 650  1900 900 
-Connection ~ 1900 1300
-Wire Wire Line
-	1900 1300 1900 1200
 Wire Wire Line
 	1650 800  1650 900 
 Wire Wire Line
@@ -3557,8 +3499,6 @@ Wire Wire Line
 	6950 2500 7050 2500
 Wire Wire Line
 	8150 3650 7950 3650
-Wire Wire Line
-	7050 3150 6750 3150
 Wire Wire Line
 	6850 3650 7050 3650
 Wire Wire Line
@@ -3975,11 +3915,9 @@ Wire Wire Line
 Wire Wire Line
 	3100 1150 6050 1150
 Wire Wire Line
-	2800 1150 2800 1250
+	2800 1150 2800 2750
 Wire Wire Line
 	6450 3250 7050 3250
-Wire Wire Line
-	1900 1300 2000 1300
 Wire Wire Line
 	8050 3750 8050 3850
 Wire Wire Line
@@ -3998,8 +3936,6 @@ Wire Wire Line
 	2000 1300 2150 1300
 Wire Wire Line
 	1650 1300 1650 1400
-Wire Wire Line
-	1650 1300 1900 1300
 Wire Wire Line
 	8850 8000 8850 8100
 Wire Wire Line
@@ -5154,4 +5090,8 @@ Wire Wire Line
 Connection ~ 6600 4800
 Wire Wire Line
 	6600 4800 6900 4800
+Wire Wire Line
+	1650 1300 2000 1300
+Wire Wire Line
+	6050 3150 7050 3150
 $EndSCHEMATC
