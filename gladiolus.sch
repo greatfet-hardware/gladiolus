@@ -1332,36 +1332,6 @@ F 6 "RES SMD 10K OHM 5% 1/10W 0603" H 11850 2350 60  0001 C CNN "Description"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R26
-U 1 1 58484432
-P 7350 1200
-F 0 "R26" V 7430 1200 50  0000 C CNN
-F 1 "0" V 7350 1200 50  0000 C CNN
-F 2 "gsg-modules:0603" V 7280 1200 50  0001 C CNN
-F 3 "" H 7350 1200 50  0000 C CNN
-F 4 "Yageo" H 7350 1200 60  0001 C CNN "Manufacturer"
-F 5 "RC0603JR-070RL" H 7350 1200 60  0001 C CNN "Part Number"
-F 6 "RES SMD 0.0OHM JUMPER 1/10W 0603" H 7350 1200 60  0001 C CNN "Description"
-F 7 "DNP" V 7250 1200 60  0000 C CNN "Note"
-	1    7350 1200
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R29
-U 1 1 58484547
-P 8150 1200
-F 0 "R29" V 8230 1200 50  0000 C CNN
-F 1 "0" V 8150 1200 50  0000 C CNN
-F 2 "gsg-modules:0603" V 8080 1200 50  0001 C CNN
-F 3 "" H 8150 1200 50  0000 C CNN
-F 4 "Yageo" H 8150 1200 60  0001 C CNN "Manufacturer"
-F 5 "RC0603JR-070RL" H 8150 1200 60  0001 C CNN "Part Number"
-F 6 "RES SMD 0.0OHM JUMPER 1/10W 0603" H 8150 1200 60  0001 C CNN "Description"
-F 7 "DNP" V 8050 1200 60  0000 C CNN "Note"
-	1    8150 1200
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:R R39
 U 1 1 58489380
 P 13450 2800
@@ -1941,27 +1911,6 @@ F 3 "" H 13200 5450 50  0000 C CNN
 	1    13200 5450
 	1    0    0    -1  
 $EndComp
-Text Label 7100 800  3    40   ~ 0
-P4_4
-$Comp
-L Device:R R22
-U 1 1 585E7BAB
-P 7100 1200
-F 0 "R22" V 7180 1200 50  0000 C CNN
-F 1 "0" V 7100 1200 50  0000 C CNN
-F 2 "gsg-modules:0603" V 7030 1200 50  0001 C CNN
-F 3 "" H 7100 1200 50  0000 C CNN
-F 4 "Yageo" H 7100 1200 60  0001 C CNN "Manufacturer"
-F 5 "RC0603JR-070RL" H 7100 1200 60  0001 C CNN "Part Number"
-F 6 "RES SMD 0.0OHM JUMPER 1/10W 0603" H 7100 1200 60  0001 C CNN "Description"
-F 7 "DNP" V 7000 1200 60  0000 C CNN "Note"
-	1    7100 1200
-	-1   0    0    1   
-$EndComp
-Text Label 7350 800  3    40   ~ 0
-P4_8
-Text Label 8150 800  3    40   ~ 0
-P4_3
 Text Label 2800 800  3    40   ~ 0
 P2_5
 Text Label 11600 800  3    40   ~ 0
@@ -3094,13 +3043,6 @@ Wire Wire Line
 Wire Wire Line
 	11600 4950 13200 4950
 Wire Wire Line
-	7100 800  7100 1050
-Connection ~ 6850 1600
-Wire Wire Line
-	7100 1600 7100 1350
-Wire Wire Line
-	6850 1600 7100 1600
-Wire Wire Line
 	13200 5450 13200 5350
 Wire Wire Line
 	13800 4000 13600 4000
@@ -3324,12 +3266,6 @@ Wire Wire Line
 	13200 3450 13200 3400
 Wire Wire Line
 	12600 3450 13200 3450
-Wire Wire Line
-	7350 800  7350 1050
-Wire Wire Line
-	7350 2250 7350 1350
-Wire Wire Line
-	6950 2250 7350 2250
 Connection ~ 12850 3350
 Connection ~ 11150 3250
 Connection ~ 11450 3550
@@ -3463,7 +3399,6 @@ Wire Wire Line
 	7950 3250 8300 3250
 Wire Wire Line
 	8300 3950 8300 3850
-Connection ~ 8150 1450
 Wire Wire Line
 	8050 1450 8150 1450
 Wire Wire Line
@@ -3485,12 +3420,6 @@ Wire Wire Line
 	6450 3950 6450 3850
 Wire Wire Line
 	1650 800  1650 900 
-Wire Wire Line
-	6950 2250 6950 2500
-Wire Wire Line
-	8150 1050 8150 800 
-Wire Wire Line
-	8150 1350 8150 1450
 Wire Wire Line
 	7450 2500 7450 2400
 Wire Wire Line
@@ -3832,8 +3761,6 @@ Wire Wire Line
 	7450 7300 7450 7700
 Wire Wire Line
 	13200 4950 13300 4950
-Wire Wire Line
-	6850 1600 6850 3650
 Wire Wire Line
 	3400 4250 4650 4250
 Wire Wire Line
@@ -4619,7 +4546,6 @@ F 4 "DNP" V 7300 2650 50  0000 C CNN "Note"
 	1    7350 2800
 	0    1    1    0   
 $EndComp
-Connection ~ 6950 2500
 Wire Wire Line
 	6950 2500 6950 3550
 Wire Wire Line
@@ -4878,8 +4804,6 @@ Wire Wire Line
 	4750 5150 4750 5500
 Wire Wire Line
 	4650 4250 4650 5150
-Wire Wire Line
-	6850 750  6850 1600
 Text Label 4550 5500 2    40   ~ 0
 P4_2
 NoConn ~ 15300 5400
@@ -5094,4 +5018,10 @@ Wire Wire Line
 	1650 1300 2000 1300
 Wire Wire Line
 	6050 3150 7050 3150
+NoConn ~ 15300 1600
+NoConn ~ 16200 1200
+Wire Wire Line
+	6850 750  6850 3650
+NoConn ~ 15300 1300
+NoConn ~ 15300 1500
 $EndSCHEMATC
