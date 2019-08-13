@@ -3101,7 +3101,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 1150 3100 1150
 Wire Wire Line
-	6050 1150 6050 3150
+	6350 1150 6350 3150
 Connection ~ 4250 3250
 Connection ~ 3900 3250
 Wire Wire Line
@@ -3840,7 +3840,7 @@ Wire Wire Line
 Wire Wire Line
 	8150 1450 8150 3650
 Wire Wire Line
-	3100 1150 6050 1150
+	3100 1150 6350 1150
 Wire Wire Line
 	2800 1150 2800 2750
 Wire Wire Line
@@ -3883,7 +3883,7 @@ Wire Wire Line
 	1650 1950 1650 2350
 Connection ~ 2200 2650
 Text Notes 4900 5300 0    50   ~ 0
-B0: AC coupled\nB1: DC coupled (default)
+B0: AC coupled (default)\nB1: DC coupled
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5C7387E5
@@ -4670,7 +4670,7 @@ Wire Wire Line
 	5600 2250 5650 2250
 Wire Wire Line
 	4950 2250 5000 2250
-Text Label 5700 2150 0    50   ~ 0
+Text Label 6050 2150 2    50   ~ 0
 ACDC_sel
 $Comp
 L Jumper:Jumper_3_Bridged12 JP2
@@ -4860,37 +4860,26 @@ Wire Wire Line
 $Comp
 L Device:R R16
 U 1 1 5E0CA3EB
-P 5650 1950
-F 0 "R16" V 5730 1950 50  0000 C CNN
-F 1 "10k" V 5650 1950 50  0000 C CNN
-F 2 "gsg-modules:0603" V 5580 1950 50  0001 C CNN
-F 3 "" H 5650 1950 50  0000 C CNN
-F 4 "Panasonic" H 5650 1950 60  0001 C CNN "Manufacturer"
-F 5 "ERJ-3GEYJ103V" H 5650 1950 60  0001 C CNN "Part Number"
-F 6 "RES SMD 10K OHM 5% 1/10W 0603" H 5650 1950 60  0001 C CNN "Description"
-	1    5650 1950
+P 5650 1900
+F 0 "R16" V 5730 1900 50  0000 C CNN
+F 1 "10k" V 5650 1900 50  0000 C CNN
+F 2 "gsg-modules:0603" V 5580 1900 50  0001 C CNN
+F 3 "" H 5650 1900 50  0000 C CNN
+F 4 "Panasonic" H 5650 1900 60  0001 C CNN "Manufacturer"
+F 5 "ERJ-3GEYJ103V" H 5650 1900 60  0001 C CNN "Part Number"
+F 6 "RES SMD 10K OHM 5% 1/10W 0603" H 5650 1900 60  0001 C CNN "Description"
+	1    5650 1900
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	5600 2150 5650 2150
 Wire Wire Line
-	5650 2150 5650 2100
+	5650 2150 5650 2050
 Wire Wire Line
-	5650 2150 5700 2150
+	5650 2150 6050 2150
 Connection ~ 5650 2150
 Wire Wire Line
-	5650 1800 5650 1750
-$Comp
-L power:VCC #PWR0110
-U 1 1 5E21C3EE
-P 5650 1750
-F 0 "#PWR0110" H 5650 1600 50  0001 C CNN
-F 1 "VCC" V 5667 1878 50  0000 L CNN
-F 2 "" H 5650 1750 50  0001 C CNN
-F 3 "" H 5650 1750 50  0001 C CNN
-	1    5650 1750
-	1    0    0    -1  
-$EndComp
+	5650 1750 5650 1650
 Wire Wire Line
 	5900 3450 7050 3450
 Wire Wire Line
@@ -4997,7 +4986,7 @@ Wire Wire Line
 Wire Wire Line
 	1650 1300 2000 1300
 Wire Wire Line
-	6050 3150 7050 3150
+	6350 3150 7050 3150
 NoConn ~ 15300 1600
 NoConn ~ 16200 1200
 Wire Wire Line
@@ -5100,4 +5089,15 @@ F 3 "" H 8450 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 9950 6200
+$Comp
+L power:GND #PWR?
+U 1 1 5E2014A1
+P 5650 1650
+F 0 "#PWR?" H 5650 1400 50  0001 C CNN
+F 1 "GND" V 5750 1650 50  0000 R CNN
+F 2 "" H 5650 1650 50  0001 C CNN
+F 3 "" H 5650 1650 50  0001 C CNN
+	1    5650 1650
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
