@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:gladiolus-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
@@ -65,7 +65,7 @@ F 3 "" H 15200 3450 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 16200 1200 2    40   ~ 0
-VBUS
++5V
 $Comp
 L Connector_Generic:Conn_02x20_Odd_Even J1
 U 1 1 55FB1D52
