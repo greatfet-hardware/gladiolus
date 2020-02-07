@@ -4265,6 +4265,7 @@ F 0 "JP1" H 4950 6354 50  0000 C CNN
 F 1 "Jumper_3_Bridged12" H 4950 6263 50  0000 C CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 4950 6150 50  0001 C CNN
 F 3 "~" H 4950 6150 50  0001 C CNN
+F 4 "DNP" H 4950 6150 50  0001 C CNN "Notes"
 	1    4950 6150
 	0    1    1    0   
 $EndComp
@@ -4681,6 +4682,7 @@ F 0 "JP2" H 7300 4804 50  0000 C CNN
 F 1 "Jumper_3_Bridged12" H 7300 4713 50  0000 C CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 7300 4600 50  0001 C CNN
 F 3 "~" H 7300 4600 50  0001 C CNN
+F 4 "DNP" H 7300 4600 50  0001 C CNN "Notes"
 	1    7300 4600
 	1    0    0    -1  
 $EndComp
