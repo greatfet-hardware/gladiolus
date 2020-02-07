@@ -65,7 +65,7 @@ F 3 "" H 15200 3450 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 16200 1200 2    40   ~ 0
-+5V
+VBUS
 $Comp
 L Connector_Generic:Conn_02x20_Odd_Even J1
 U 1 1 55FB1D52
@@ -291,7 +291,7 @@ F 3 "" H 15150 6500 60  0000 C CNN
 F 4 "Samtec" H 15150 6500 60  0001 C CNN "Manufacturer"
 F 5 "SSQ-120-23-G-S" H 15150 6500 60  0001 C CNN "Part Number"
 F 6 "CONN RCPT .100\" 20POS SINGLE-ROW STACKING GOLD" H 15150 6500 60  0001 C CNN "Description"
-F 7 "DNP" V 15350 6500 60  0000 C CNN "Note"
+F 7 "" V 15350 6500 60  0000 C CNN "Note"
 	1    15150 6500
 	0    -1   -1   0   
 $EndComp
@@ -1853,6 +1853,7 @@ F 3 "" H 1950 5350 50  0000 C CNN
 F 4 "Bourns" H 1950 5350 60  0001 C CNN "Manufacturer"
 F 5 "3306F-1-103" H 1950 5350 60  0001 C CNN "Part Number"
 F 6 "10k Ohm 0.2W, 1/5W PC Pins Through Hole Trimmer Potentiometer Cermet 1 Turn Top Adjustment" H 1950 5350 60  0001 C CNN "Description"
+F 7 "DNP" H 1950 5200 50  0000 C TNN "Notes"
 	1    1950 5350
 	1    0    0    1   
 $EndComp
