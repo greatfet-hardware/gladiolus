@@ -65,7 +65,7 @@ F 3 "" H 15200 3450 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 16200 1200 2    40   ~ 0
-VBUS
++5V
 $Comp
 L Connector_Generic:Conn_02x20_Odd_Even J1
 U 1 1 55FB1D52
