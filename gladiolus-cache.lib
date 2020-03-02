@@ -9,7 +9,7 @@ F1 "Connector_Generic_Conn_01x01" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Connector*:*
+ Connector*:*_1x??_*
 $ENDFPLIST
 DRAW
 S -50 5 0 -5 1 1 6 N
@@ -379,7 +379,7 @@ F1 "Jumper_Jumper_3_Bridged12" 0 110 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Jumper*Bridged12*
+ SolderJumper*Bridged12*
 $ENDFPLIST
 DRAW
 A -65 -50 89 1282 518 0 1 0 N -120 20 -10 20
