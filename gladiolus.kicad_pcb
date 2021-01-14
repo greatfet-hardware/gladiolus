@@ -11,7 +11,10 @@
 
   (page A4)
   (title_block
+    (title Gladiolus)
     (date 2021-01-13)
+    (company "Copyright © 2015-2021 Great Scott Gadgets")
+    (comment 1 "Licensed under the CERN-OHL-P v2")
   )
 
   (layers
@@ -5741,7 +5744,7 @@
   (segment (start 124.206 96.901) (end 125.73 96.901) (width 0.3048) (layer F.Cu) (net 174))
   (segment (start 124.206 99.441) (end 125.73 99.441) (width 0.3048) (layer F.Cu) (net 175))
 
-  (zone (net 2) (net_name VCC) (layer F.Cu) (tstamp 5FFFCC8F) (hatch edge 0.508)
+  (zone (net 2) (net_name VCC) (layer F.Cu) (tstamp 5FFFCCA7) (hatch edge 0.508)
     (connect_pads (clearance 0.254))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.254) (thermal_bridge_width 0.508))
@@ -7675,7 +7678,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5FFFCC8C) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5FFFCCA4) (hatch edge 0.508)
     (connect_pads (clearance 0.254))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.254) (thermal_bridge_width 0.508))
